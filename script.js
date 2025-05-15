@@ -8,12 +8,11 @@ window.addEventListener("scroll", function () {
   });
 
   
-const scrollImage = document.getElementById('scroll-image');
+  const scrollImage = document.getElementById('scroll-image');
   window.addEventListener('scroll', () => {
       const offsetY = window.scrollY * 0.5;
-      scrollImage.style.transform = `translate(-50%, ${offsetY}px) scale(1.2)`;
+      scrollImage.style.transform = `translate(-50%, ${offsetY}px)`;
   });
-
   
   const track = document.getElementById("image-track");
 
