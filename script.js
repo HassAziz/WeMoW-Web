@@ -8,6 +8,7 @@ window.addEventListener("scroll", function () {
   });
 
   
+  
   const scrollImage = document.getElementById('scroll-image');
   window.addEventListener('scroll', () => {
       const offsetY = window.scrollY * 0.5;
@@ -63,3 +64,33 @@ window.addEventListener("scroll", function () {
           image.style.objectPosition = `50% center`;
       }
   }
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    // Toggle mobile menu
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking on a nav link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInside = navLinks.contains(event.target) || hamburger.contains(event.target);
+        
+        if (!isClickInside && navLinks.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+});
