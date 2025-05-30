@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WeMoW Web Development</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-        <nav>
+       <nav>
             <div class="container">
-                <a href="#" class="logo">
+                <a href="#About" class="logo">
                     <img src="photos/WeMoW.png">
                 </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>    
         </nav>
     
 
 
-    <div class="split-screen">
+    <div class="split-screen" id="About"> 
       <div class="left-side">
 
         <a href="#" class="logo">
@@ -41,21 +46,25 @@
             </p>
   
             <div class="buttons">
-              <a href="#">About</a>
-              <a href="#">Portfolio</a>
+              <a href="#Services">Services</a>
+              <a href="#Portfolio">Portfolio</a>
             </div>
         </div>
       </div>
     </div>
 
 
-    <div class="scroll-down">
+    
+   
+   
+   
+   <div class="scroll-down">
         <span></span>
     </div>
 
 
-    <div class="Title-Text">
-        <h5>What We Do</h5>
+    <div class="Title-Text" id="Services">
+        <h5 >What We Do</h5>
         <h1>Our Services</h1>
     </div>
 
@@ -69,9 +78,9 @@
         <div class="showcase-content">
             <div class="service-label">SERVICE 01</div>
             <h1 class="service-title">Website Development & Maintenance</h1>
-            <p class="service-description">Launch and maintain a powerful online presence with WeMoW's expert website development and maintenance services. From responsive design and custom coding to ongoing updates and security, we ensure your website is not only visually appealing but also performs flawlessly and ranks well in search engines. Let us handle the technicalities so you can focus on your business growth.</p>        </div>
-
-        
+            <p class="service-description">Launch and maintain a powerful online presence with WeMoW's expert website development and maintenance services. From responsive design and custom coding to ongoing updates and security, we ensure your website is not only visually appealing but also performs flawlessly and ranks well in search engines. Let us handle the technicalities so you can focus on your business growth.</p>
+            </div>
+  
     </section>
 
 
@@ -79,13 +88,13 @@
         <div class="showcase-content2">
             <div class="service-label">SERVICE 02</div>
             <h1 class="service-title">Business Branding</h1>
-            <p class="service-description">Establish a strong and memorable brand identity with WeMoW's comprehensive business branding services. We go beyond logos to define your brand's core values, messaging, visual style, and overall presence. Our strategic branding helps you connect with your target audience, build trust, and stand out from the competition in today's digital landscape.</p>        </div>
+            <p class="service-description">Establish a strong and memorable brand identity with WeMoW's comprehensive business branding services. We go beyond logos to define your brand's core values, messaging, visual style, and overall presence. Our strategic branding helps you connect with your target audience, build trust, and stand out from the competition in today's digital landscape.</p>
+            </div>
 
         <div class="Hero-image">
             <img src="photos/computer4.jpg">
             <div class="border-overlay2"></div>
         </div>
-
     </section>
   
 
@@ -98,17 +107,17 @@
       <div class="showcase-content">
           <div class="service-label">SERVICE 03</div>
           <h1 class="service-title">Digital Marketing</h1>
-          <p class="service-description">Drive growth and reach your target audience effectively with WeMoW's results-driven digital marketing services. Our tailored strategies encompass SEO, social media marketing, content creation, email marketing, and more. We help you increase online visibility, generate leads, and achieve your specific business objectives in the competitive digital world.</p>      </div>
+          <p class="service-description">Drive growth and reach your target audience effectively with WeMoW's results-driven digital marketing services. Our tailored strategies encompass SEO, social media marketing, content creation, email marketing, and more. We help you increase online visibility, generate leads, and achieve your specific business objectives in the competitive digital world.</p>
+          </div>
     </section>
 
 
 
-    <div class="Portfolio">
+
+    <div class="Portfolio" id="Portfolio">
         <h5>Client Success Stories</h5>
         <h1>Our Portfolio</h1>
     </div>
-
-
 
     <div class="flooring-gallery-container">
         <div id="image-track" data-mouse-down-at="0" data-prev-percentage="-50">
@@ -144,11 +153,10 @@
     </div>
 
     <div class="Portfolio-BC">
-        <a href="test.html" class="Portfolio-Button">Learn More</a>
-      </div>
+        <a href="#Contact" class="Portfolio-Button">Learn More</a>
+    </div>
 
-
-
+    
     <!-- Pricing Section -->
     <div class="pricing-section">
         <div class="Title-Text">
@@ -166,7 +174,8 @@
                     </div>
                     <p class="pricing-description">Perfect for small businesses looking to establish their online presence</p>
                 </div>
-                <div class="pricing-features">
+                <div class
+                ="pricing-features">
                     <ul>
                         <li><i class="fas fa-check"></i> 5-page responsive website</li>
                         <li><i class="fas fa-check"></i> Basic SEO setup</li>
@@ -176,7 +185,7 @@
                     </ul>
                 </div>
                 <div class="pricing-button">
-                    <a href="#contact" class="price-btn">Get Started</a>
+                    <a href="#Contact" class="price-btn">Get Started</a>
                 </div>
             </div>
 
@@ -202,7 +211,7 @@
                     </ul>
                 </div>
                 <div class="pricing-button">
-                    <a href="#contact" class="price-btn">Get Started</a>
+                    <a href="#Contact" class="price-btn">Get Started</a>
                 </div>
             </div>
 
@@ -228,11 +237,12 @@
                     </ul>
                 </div>
                 <div class="pricing-button">
-                    <a href="#contact" class="price-btn">Get Started</a>
+                    <a href="#Contact" class="price-btn">Get Started</a>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Testimonials Section -->
     <div class="testimonials-section">
@@ -245,20 +255,20 @@
                 <div class="quote-icon">
                     <i class="fas fa-quote-left"></i>
                 </div>
-                <p class="testimonial-text">We've had an absolutely excellent experience working with this team of web developers! From the start, they were incredibly professional and showed great care towards us and our needs...</p>
-                <div class="testimonial-author">
-                    <h4>Charbel Mawad</h4>
-                    <p>AllStar Auto Salvage</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="quote-icon">
-                    <i class="fas fa-quote-left"></i>
-                </div>
                 <p class="testimonial-text">This has been the BEST web development company to work with. My web design is beautifully interactive. Communication throughout the process was ongoing and engaging...</p>
                 <div class="testimonial-author">
                     <h4>Victoria Washington</h4>
                     <p>Washington Consulting LLC</p>
+                </div>
+            </div>
+             <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">Amazing Job! Highly recommended.. very pleased with my website built for me. Easily to work with....</p>
+                <div class="testimonial-author">
+                    <h4>Holly Collier</h4>
+                    <p>Pure & Clean Organization</p>
                 </div>
             </div>
             <div class="testimonial-card">
@@ -275,7 +285,7 @@
     </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="contact-section">
+    <div id="Contact" class="contact-section">
         <div class="contact-container">
             <div class="contact-info">
                 <div class="Title-Text left-align">
@@ -335,6 +345,9 @@
     </footer>
 
 
-</body>
+
+
+    </body>
 </html>
 <script src="script.js"></script>
+
