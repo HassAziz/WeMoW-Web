@@ -7,7 +7,7 @@ window.addEventListener("scroll", function () {
     }
   });
 
-  
+
   
   const scrollImage = document.getElementById('scroll-image');
   window.addEventListener('scroll', () => {
@@ -94,3 +94,28 @@ window.addEventListener("scroll", function () {
         }
     });
 });
+
+function sendMail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_55oc0q6";
+    const templateID = "template_n1mcfww";
+
+    emailjs
+        .send(serviceID, templateID, params)
+        .then((res) => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("your message sent successfully");
+        })
+        .catch((err) => console.log(err));
+}
+
